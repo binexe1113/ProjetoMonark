@@ -1,0 +1,23 @@
+{
+  "name": "projetomonark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binexe1113/ProjetoMonark.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/binexe1113/ProjetoMonark/issues"
+  },
+  "homepage": "https://github.com/binexe1113/ProjetoMonark#readme",
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  }
+}
