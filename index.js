@@ -3,8 +3,10 @@ import dotenv from "dotenv";
 
 // carrega variáveis do .env
 dotenv.config();
+console.log("TOKEN:", process.env.TWITTER_BEARER?.slice(0,20) + "..."); 
 
-const client = new TwitterApi(process.env.TWITTER_BEARER);
+
+const client = new TwitterApi(process.env.TWITTER_BEARER).readOnly;
 
 export async function searchTweets(query) {
   try {
@@ -27,4 +29,6 @@ if (process.argv[2]) {
     console.log(`Tweets encontrados com "${keyword}":`);
     console.log(tweets);
   });
+}else {
+  console.log("Por favor, forneça uma palavra-chave para busca.");
 }
